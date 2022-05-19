@@ -4,7 +4,7 @@ Proyecto desarrollado en Java Server Faces, para mostrar el manejo de datos en C
 
 ## Instalación
 
-Para instalar el proyecto, se puede hacer mediante un git clone o simplemente descargar el zip del proyecto, posteria a la descargar se recomiendo abrirlo en NetBeans.
+Para instalar el proyecto, se puede hacer mediante un git clone o simplemente descargar el zip del proyecto, posterior a la descargar se recomienda abrirlo en NetBeans.
 
 ```bash
 git clone https://github.com/JuanGuzman-ai/crud_jsf.git
