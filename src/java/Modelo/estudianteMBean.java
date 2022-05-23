@@ -100,60 +100,6 @@ public class estudianteMBean {
         this.clave = clave;
     }
     
-    //METODO PARA EL LOGIN
-    
-    //    public List<estudianteMBean> getLogin(){
-//        //creamos una lista para almacenas despues la información
-//      List<estudianteMBean>data = new ArrayList<>();
-//      Conexion conex = new Conexion();
-//      try{
-//          //nos conectamos a la bd
-//          Connection con = conex.getConexion();
-//          Statement sql = con.createStatement();
-//          //traigo la info de toda la tabla estudiante
-//          ResultSet rs = sql.executeQuery("select * from usuario where user=? and clave=?");
-//          //recorrer el resultado de el select
-//          while(rs.next()){
-//              //creamos un objeto y a cada atributo le mandamos la info
-//              estudianteMBean obj = new estudianteMBean();
-//              obj.setUser(rs.getString("user"));
-//              obj.setClave(rs.getString("clave"));
-//              //el objeto data que es la lista se le añade todo el contenido de la tabla
-//              data.add(obj);
-//          }
-//      } catch (SQLException e){
-//          System.out.println(e);
-//      }
-//      return data;
-//    }
-    
-//    public boolean autenticacion(String user, String contra){
-//        PreparedStatement pst = null;
-//        ResultSet rs = null;
-//        Conexion conex = new Conexion();
-//        try {
-//            String consulta = "select * from usuario where user=? and clave =?";
-//            pst = conex.getConexion().prepareStatement(consulta);
-//            pst.setString(1, user);
-//            pst.setString(2, contra);
-//            rs = pst.executeQuery();
-//            
-//            if(rs.absolute(1)){
-//                return true;
-//            }
-//        } catch (Exception e) {
-//            System.err.println("Error" + e);
-//        }finally{
-//            try {
-//                if(conex.getConexion() != null) conex.getConexion().close();
-//                if(pst != null) pst.close();
-//                if(rs != null) rs.close();
-//            } catch (Exception e) {
-//            }
-//        }
-//        return false;
-//    }
-    
     //METODOS PARA EL CRUD
     
     //el metodo para que muestre todo en la pagina

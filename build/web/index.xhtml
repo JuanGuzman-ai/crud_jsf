@@ -49,7 +49,6 @@
             <div style="width: 50%;">
                 <h:form id="formulario" class="form-group">
                     <!--donde se pondra la información para hacer alguna función del CRUD-->
-                    <div class="limpiar">
                         <h:inputText required="true" pt:placeholder="código*" class="form-control border border-danger" id="cod" value="#{estudianteMBean.codigo}"></h:inputText>
                         <h:inputText required="true" pt:placeholder="nombre*" class="form-control border border-dark" id="nom" value="#{estudianteMBean.nombre}"></h:inputText> 
                         <h:inputText required="true" pt:placeholder="programa*" class="form-control border border-dark" id="prog" value="#{estudianteMBean.programa}"></h:inputText> 
@@ -59,12 +58,10 @@
                             <f:selectItem itemValue="Masculino" itemLabel="Masculino" />
                             <f:selectItem itemValue="Femenino" itemLabel="Femenino" />
                         </h:selectOneMenu>
-                    </div>
                     <br></br>
                     <h:commandButton class="btn btn-success" value="Agregar" action="#{estudianteMBean.agregar()}"></h:commandButton>
                     <h:commandButton class="btn btn-info" value="Modificar" action="#{estudianteMBean.modificar()}"></h:commandButton>
                     <h:commandButton class="btn btn-danger" value="Eliminar" action="#{estudianteMBean.eliminar()}"></h:commandButton>
-                    <h:commandButton class="btn btn-warning limpiar" value="Limpiar" type="reset"></h:commandButton>
                 </h:form>
             </div>
             <br></br>
